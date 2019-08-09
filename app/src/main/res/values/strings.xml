@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">LearningEnglish</string>
+    <string name="lesson_num">Урок №%1$s</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="tab_text_1">Теория</string>
+    <string name="tab_text_2">Тест</string>
+    <string name="title_activity_welcome_activitys">WelcomeActivity</string>
+    <string name="history">Я родился в 2015 году в семье отца британца-корги и матери русской-борзой. Моя семья всё моё детство жила в России, поэтому мой родной язык - русский. Родители мне привили любовь к путешествиям.Теперь мне осталось посетить Великобританию и все её достопримечательности, чтобы понять, каково быть британцем и русским одновременно. Поэтому я решил изучить английский язык!</string>
+    <string name="title_activity_lesson">Lesson</string>
+    <string name="lesson_0">Для начала мы обговорим с тобой один момент. Из-за большого количества англоговорящих стран у английского языка возникло множество подтипов, жаргонов и пр.\nНо мы собираемся отправиться в Великобританию, поэтому лучшим выбором для изучения будет БРИТАНСКИЙ-АНГЛИЙСКИЙ.\nКстати, «Английский язык» в переводе на английский будет писаться как “English”, или “The English language”. Заметил, что даже кавычки поменялись с « на “ ? Все эти прелести языка будут ждать нас впереди, а пока начнём с самого простого.</string>
+        <string name="lesson_0_question_1">Как перевести слово English?</string>
+    <string name="finish_lesson">Закончить урок</string>
+    <string name="are_you_with_me">Ну так что, ты со мной?:)</string>
+    <string name="yes">Да!</string>
+    <string name="no">Нет</string>
+    <string name="hi_i_tobe">Привет! Меня зовут Тоби. Я тоже, как и ты, хочу выучить Английский язык!</string>
+    <string name="hii">Hi!</string>
+</resources>
