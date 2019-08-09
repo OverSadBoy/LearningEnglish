@@ -5,6 +5,8 @@ import com.google.android.material.tabs.TabLayout;
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.nio.Buffer;
+
 public class Lesson extends AppCompatActivity {
 
     @Override
@@ -16,6 +18,7 @@ public class Lesson extends AppCompatActivity {
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
+        Buffer buff;
     }
 
 }
