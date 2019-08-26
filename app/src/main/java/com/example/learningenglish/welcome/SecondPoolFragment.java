@@ -16,37 +16,32 @@ import com.example.learningenglish.R;
 
 public class SecondPoolFragment extends Fragment {
 
-    int id;
-    private ImageView imageView;
-    private TextView textView;
-    private LinearLayout linearLayout;
+    private int id;
 
-    public SecondPoolFragment(int id) {
+    private SecondPoolFragment(int id) {
         this.id = id;
     }
 
 
-    public static SecondPoolFragment newInstance(int index) {
-        SecondPoolFragment fragment = new SecondPoolFragment(index);
-        return fragment;
+    static SecondPoolFragment newInstance(int index) {
+        return new SecondPoolFragment(index);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        textView = view.findViewById(R.id.history_text);
-        imageView = view.findViewById(R.id.second_image);
-        linearLayout = view.findViewById(R.id.wind);
+        TextView textView = view.findViewById(R.id.history_text);
+        ImageView imageView = view.findViewById(R.id.second_image);
+        LinearLayout linearLayout = view.findViewById(R.id.wind);
         if (id == 6) {
             linearLayout.setBackgroundColor(getResources().getColor(R.color.sepi));
-            textView.setText("Чтобы мы с тобой знали друг друга еще лучше,\nя предлагаю тебе, мой дорогой друг, немного\nокунуться в историю моей жизни...");
+            textView.setText(getString(R.string.spf_id6));
             imageView.setImageResource(R.drawable.ditya_v_shlyape_02);
         }
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_sp_welcome, container, false);
-        return root;
+        return inflater.inflate(R.layout.fragment_sp_welcome, container, false);
     }
 }

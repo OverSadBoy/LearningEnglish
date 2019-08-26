@@ -21,12 +21,12 @@ public class FirstPoolFragment extends Fragment {
     private static final String ARG_SECTION_NUMBER = "section_number";
     private int id;
 
-    public FirstPoolFragment(int id) {
+    private FirstPoolFragment(int id) {
         this.id = id;
     }
 
 
-    public static FirstPoolFragment newInstance(int index) {
+    static FirstPoolFragment newInstance(int index) {
         return new FirstPoolFragment(index);
     }
 
@@ -47,27 +47,26 @@ public class FirstPoolFragment extends Fragment {
         switch (id) {
             case 1:
                 firstText.setText(getResources().getString(R.string.hii));
-                secondText.setText("Привет!\n(Свапай для продолжения!)");
+                secondText.setText(getString(R.string.f_text));
                 break;
             case 2:
-                firstText.setText("Now we are going to learn basic English...");
-                secondText.setText("Сейчас мы будем изучать базовый Английский язык...");
+                firstText.setText(getString(R.string.s_f_text));
+                secondText.setText(getString(R.string.s_s_text));
                 break;
             case 3:
-                firstText.setText("Someone can help us with this!");
-                secondText.setText("Кое-кто может нам с этим помочь!");
+                firstText.setText(getString(R.string.th_f_text));
+                secondText.setText(getString(R.string.th_s_text));
                 break;
             case 4:
                 imageView.setImageResource(R.drawable.psya);
-                firstText.setText("Meet your new friend TOBE!");
-                secondText.setText("Знакомьтесь, ваш новый друг Тоби!");
+                firstText.setText(getString(R.string.fr_f_text));
+                secondText.setText(getString(R.string.fr_s_text));
                 break;
         }
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_fp_welcome, container, false);
-        return root;
+        return inflater.inflate(R.layout.fragment_fp_welcome, container, false);
     }
 }

@@ -24,17 +24,15 @@ public class MeetFragment extends Fragment {
     private static final String ARG_SECTION_NUMBER = "section_number";
 
     private int id;
-    private Button yes;
-    private Button no;
     private Context context;
 
-    public MeetFragment(int id, Context context) {
+    private MeetFragment(int id, Context context) {
         this.id = id;
         this.context = context;
     }
 
 
-    public static MeetFragment newInstance(int index, Context context) {
+    static MeetFragment newInstance(int index, Context context) {
         MeetFragment fragment = new MeetFragment(index, context);
         Bundle bundle = new Bundle();
         bundle.putInt(ARG_SECTION_NUMBER, index);
@@ -53,7 +51,7 @@ public class MeetFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        yes = view.findViewById(R.id.btn_yes);
+        Button yes = view.findViewById(R.id.btn_yes);
         yes.setOnClickListener(V -> {
             auth();
             startActivity(new Intent(context, MainActivity.class));
@@ -61,16 +59,15 @@ public class MeetFragment extends Fragment {
 
 
         });
-        no = view.findViewById(R.id.btn_no);
-        no.setOnClickListener(v -> Toast.makeText(context,"А может ты нажмешь Да))))",Toast.LENGTH_SHORT).show());
+        Button no = view.findViewById(R.id.btn_no);
+        no.setOnClickListener(v -> Toast.makeText(context, getString(R.string.mb_you_yes),Toast.LENGTH_SHORT).show());
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_meet, container, false);
-        return root;
+        return inflater.inflate(R.layout.fragment_meet, container, false);
     }
-    void auth() {
+    private void auth() {
         String userId = UUID.randomUUID().toString();
         saveToken(userId);
     }

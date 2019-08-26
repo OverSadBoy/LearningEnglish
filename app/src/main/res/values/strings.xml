@@ -15,4 +15,21 @@
     <string name="no">Нет</string>
     <string name="hi_i_tobe">Привет! Меня зовут Тоби. Я тоже, как и ты, хочу выучить Английский язык!</string>
     <string name="hii">Hi!</string>
+    <string name="british">Британский</string>
+    <string name="omerick">Омериканский</string>
+    <string name="english">Английский</string>
+    <string name="serbian">Сербский</string>
+    <string name="right">ВЕРНО!</string>
+    <string name="wrong">НЕВЕРНО!</string>
+    <string name="introduction">Введение</string>
+    <string name="alphabet">Алфавит</string>
+    <string name="f_text">Привет! (Свапай для продолжения!)</string>
+    <string name="s_f_text">Now we are going to learn basic English…</string>
+    <string name="s_s_text">Сейчас мы будем изучать базовый Английский язык…</string>
+    <string name="th_f_text">Someone can help us with this!</string>
+    <string name="th_s_text">Кое-кто может нам с этим помочь!</string>
+    <string name="fr_f_text">Meet your new friend TOBE!</string>
+    <string name="fr_s_text">Знакомьтесь, ваш новый друг Тоби!</string>
+    <string name="mb_you_yes">А может ты нажмешь Да))))</string>
+    <string name="spf_id6">Чтобы мы с тобо й знали друг друга еще лучше, я предлагаю тебе, мой дорогой друг, немного окунуться в историю моей жизни…</string>
 </resources>

@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
     public List<Item> setData() {
         List<Item> data = new ArrayList<>();
-        data.add(0, new Item(getResources().getString(R.string.lesson_num, "1"), "Введение", false));
-        data.add(1, new Item(getResources().getString(R.string.lesson_num, "2"), "Алфавит", false));
+        data.add(0, new Item(getResources().getString(R.string.lesson_num, "1"), getResources().getString(R.string.introduction), false));
+        data.add(1, new Item(getResources().getString(R.string.lesson_num, "2"), getResources().getString(R.string.alphabet), false));
         return data;
     }
 

@@ -11,7 +11,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
 
     private Context context;
 
-    public PagerAdapter(Context context, FragmentManager fm) {
+    PagerAdapter(Context context, FragmentManager fm) {
         super(fm);
         this.context = context;
     }
